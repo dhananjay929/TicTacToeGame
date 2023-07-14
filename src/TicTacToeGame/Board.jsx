@@ -42,9 +42,9 @@ const Board = () => {
     
     return (
     <div className='board-container'>
-        {isWinner?<><h2> Bravo ! {isXTurn?"◯":"⨉"} WON! </h2><br/><br/><button className="btn btn-warning" onClick={reset}>Play Again !</button></>:<>
-          <h3>Player {isXTurn?"⨉":"◯"} chance to move</h3>
-        <div className='board-row'>
+        {isWinner?<><h2 id='head2'> Bravo ! {isXTurn?"◯":"⨉"} WON! </h2><br/><br/><button className="btn btn-warning" onClick={reset}>Play Again !</button></>:<>
+          <h3 id='head'>Player {isXTurn?"⨉":"◯"} chance to move</h3>
+        <div id='firstrow' className='board-row'>
             <Square   value={state[0]} onClick={()=> handleClick(0)}/>
             <Square   value={state[1]} onClick={()=> handleClick(1)}/>
             <Square   value={state[2]} onClick={()=> handleClick(2)}/>

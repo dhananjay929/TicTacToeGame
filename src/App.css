@@ -1,11 +1,24 @@
 .board-row{
   display: flex;
   align-items: center;
-  margin-left: 30%;
-  
-
+  justify-content: center;
 }
 .board-container{
   color: white;
   text-align: center;
+}
+#firstrow{
+  margin-top: 100px;
+}
+#head {
+  font-size: 40px;
+  font-family:cursive ;
+  text-decoration:underline;
+  margin-top: 100px;
+}
+#head2{
+  font-size: 40px;
+  font-family:cursive ;
+  text-decoration:underline;
+  margin-top: 100px;
 }
